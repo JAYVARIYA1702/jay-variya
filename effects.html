@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    
+    <button id="starts">starts</button>
+    <button id="stops">stops</button>
+    <br>
+    <br>
+    <div class="box">
+
+    </div>
+    
+    <script src="js/jquery.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#starts").click(function(){
+                $(".box").animate({width :"500px"});
+                $(".box").animate({height: "500px"});
+                $(".box").animate({width:"100px"});
+                $(".box").animate({height:"100px"})
+                $(".box").fadeOut().delay().fadeIn().fadeTo()
+                // $(".box").dequeue()
+                // $(".box").stop()
+                // $(".box").show()
+                // $(".box").hide()
+                // $(".box").toggle()
+                // $(".box").slideUp()
+            })
+            $("#stops").click(function(){
+                $(".box").clearQueue()
+            })
+        })
+        // $(document).dequeue(function(){
+        //     $("#starts").animate({width :"500px"},400);
+        // })
+    </script>
+</body>
+</html>

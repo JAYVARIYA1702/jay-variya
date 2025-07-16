@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>
+        hello
+    </h1>
+    <button>
+        click me
+    </button>
+
+    <script src="js/jquery.js"></script>
+
+    <script>
+        // $(document).ready(function(){
+        //     $("button").click(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // double click event
+
+        // $(document).ready(function(){
+        //     $("button").dblclick(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // hover
+
+        // $(document).ready(function(){
+        //     $("button").hover(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // keydown
+
+        // $(document).ready(function(){
+        //     $("button").keydown(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // mousedown based on click event
+
+        // $(document).ready(function(){
+        //     $("button").mousedown(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // mouseover based on hover as it is mousemove
+
+        // $(document).ready(function(){
+        //     $("button").mousemove(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // focus event and focusin
+
+        // $(document).ready(function(){
+        //     $("button").focusin(function(){
+        //         $("h1").text("hello world")
+        //         $("h1").css({color:"blue"})
+        //     })
+        // })
+
+        // blur
+
+        // $(document).ready(function(){
+        //     $("button").blur(function(){
+        //         $("h1").text("Button lost focus");
+        //         $("h1").css({color: "red"});
+        //     });
+        // });
+
+        // scroll
+
+        // $(document).ready(function()
+        // {
+        //     $("window").scroll(function(){
+        //         $("h1").text("windows was scrolled");
+        //         $("h1").css({color: "red"});
+        //     });
+        // });
+
+        // trigger
+
+        $(document).ready(function(){
+            $("button").trigger(function(){
+                $("h1").text("click");
+                $("h1").css({color:"red"})
+                });
+        })
+        
+        </script>
+    <!-- for on off events -->
+    <!-- <body>
+       
+    <button id="button">hover me</button>
+    <button id="on">turn on</button>
+    <button id="off">turn off</button>
+    <h1>Move your mouse over the button</h1>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function(){
+
+            // Define the handler function
+            function mousemovehandler() {
+                $("h1").text("hello world");
+                $("h1").css({color:"blue"});
+            }
+
+            $("#button").on("mousemove", mousemovehandler);
+
+            // Turn on
+            $("#on").on("click", function(){
+                $("#button").on("mousemove", mousemovehandler);
+                $("h1").text("on");
+                $("h1").css({color:"green"});
+            });
+
+            // Turn off
+            $("#off").on("click", function(){
+                $("#button").off("mousemove", mousemovehandler);
+                $("h1").text("off");
+                $("h1").css({color:"red"});
+            });
+        });
+    </script>
+    </body>-->
+</body>
+</html>    
